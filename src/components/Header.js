@@ -1,12 +1,12 @@
-import React from 'react'
+// Header.js
+import React from 'react';
 
-function Header({blogName}) {
+function Header({ name }) {
   return (
     <header>
-        <h1>OVERREACTED</h1>
-        <h2>{blogName}</h2>
+      <h1>{name}</h1>
     </header>
-  )
+  );
 }
 
-export default Header
+export default Header;

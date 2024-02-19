@@ -1,7 +1,7 @@
+// Article.js
 import React from 'react';
 
 function Article({ title, date = "January 1, 1970", preview, minutesToRead }) {
-  // Function to generate coffee cup or bento box emojis based on minutesToRead
   const generateEmojis = (minutes, emoji) => {
     const count = Math.ceil(minutes / (emoji === '☕️' ? 5 : 10));
     return Array.from({ length: count }, (_, i) => emoji);

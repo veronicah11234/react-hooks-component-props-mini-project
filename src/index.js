@@ -2,5 +2,11 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./components/App";
+// import { render, screen } from '@testing-library/react';
 
-ReactDOM.render(<App />, document.getElementById("root"));
+
+function renderApp() {
+  ReactDOM.render(<App />, document.getElementById("root"));
+}
+
+renderApp();

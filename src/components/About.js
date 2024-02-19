@@ -1,13 +1,13 @@
-import React from 'react'
+// About.js
+import React from 'react';
 
-function About({ image = "https://via.placeholder.com/215", aboutText }) {
+function About({ about, image }) {
   return (
-    <aside>
+    <div>
+      <p>{about}</p>
       <img src={image} alt="blog logo" />
-      <p>{aboutText}</p>
-    </aside>
+    </div>
   );
 }
 
-
-export default About
+export default About;
